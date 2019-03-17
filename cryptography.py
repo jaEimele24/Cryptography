@@ -16,10 +16,13 @@ key=input("key: ")
 list1=list(message)
 list3=[]
 list4=[]
+list5=[]
 if command=="e":
     for i in message:
         list3.append(associations.find(i))
     print(list3)
+    for z in range (0,len(message)):
+        
     for x in key:
         list4.append(associations.find(x))
     print(list4)
