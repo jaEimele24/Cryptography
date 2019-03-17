@@ -27,7 +27,16 @@ if command=="e":
         listkeynums.append(associations.find(x))
     print(listkeynums)
     d=(len(listmessagenums))//(len(listmessagenums))
-    u=(len(listmessagenums))%
+    u=(len(listmessagenums))%(len(listkeynums))
+    key2=[]
+    if u == 0:
+        for q in range (0,d):
+            key2.append(listkeynums)
+            print(key2)
+    if u > 0:
+        for j in range (0,r):
+            key2.append(listkeynums)
+            print(key2)
     print(listkeynums)
     
     
