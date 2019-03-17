@@ -13,19 +13,22 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 command=input("Enter e to encrypt, d to decrypt, or q to quit: ")
 message=input("message: ")
 key=input("key: ")
-list1=list(message)
-list3=[]
-list4=[]
-list5=[]
+listmessage=list(message)
+list5=list(key)
+listmessagenums=[]
+listkeynums=[]
+list6=[]
+
 if command=="e":
     for i in message:
-        list3.append(associations.find(i))
-    print(list3)
-    for z in range (0,len(message)):
-        
+        listmessagenums.append(associations.find(i))
+    print(listmessagenums)
     for x in key:
-        list4.append(associations.find(x))
-    print(list4)
+        listkeynums.append(associations.find(x))
+    print(listkeynums)
+    d=(len(listmessagenums))//(len(listmessagenums))
+    u=(len(listmessagenums))%
+    print(listkeynums)
     
     
         
