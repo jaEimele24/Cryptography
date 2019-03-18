@@ -26,18 +26,25 @@ if command=="e":
     for x in key:
         listkeynums.append(associations.find(x))
     print(listkeynums)
-    d=(len(listmessagenums))//(len(listmessagenums))
+    d=(len(listmessagenums))//(len(listkeynums))
     print(d)
     u=(len(listmessagenums))%(len(listkeynums))
     print(u)
     key2=[]
-    for q in range (0,d):
-        key2.append(listkeynums)
+    for f in range (0, len(listmessagenums)):
+        key2.append(listkeynums[f%len(listkeynums)])
         print(key2)
-    for j in range (0,u):
-        key2.append(listkeynums)
-        print(key2)
-    print(listkeynums)
+    #for q in range (0,d):
+        #key2.append(listkeynums)
+        #print(key2)
+    #for j in range (0,u):
+        #key2.append(listkeynums)
+        #print(key2)
+    #print(listkeynums)
+    newlist=[x + y for x, y in zip(listmessagenums, key2)]
+    print(newlist)
+    for x in newlist:
+        
     
     
         
