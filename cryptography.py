@@ -46,7 +46,7 @@ if command=="e":
     newlist2=[]
     for x in newlist:
         if x > len(listassociations):
-            newlist2.append(x-len(listassocitions)
+            newlist2.append(x-len(listassociations))
         else:
             newlist2.append(x)
     codelist=[]
