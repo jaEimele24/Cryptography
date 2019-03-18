@@ -18,7 +18,7 @@ list5=list(key)
 listmessagenums=[]
 listkeynums=[]
 list6=[]
-
+listassociations=list(associations)
 if command=="e":
     for i in message:
         listmessagenums.append(associations.find(i))
@@ -43,7 +43,16 @@ if command=="e":
     #print(listkeynums)
     newlist=[x + y for x, y in zip(listmessagenums, key2)]
     print(newlist)
+    newlist2=[]
     for x in newlist:
+        if x > len(listassociations):
+            newlist2.append(x-len(listassocitions)
+        else:
+            newlist2.append(x)
+    codelist=[]
+    for b in newlist2:
+        codelist.append(associations[b])
+        print(codelist)
         
     
     
