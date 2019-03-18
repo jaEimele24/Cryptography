@@ -11,8 +11,8 @@ See the detailed requirements at https://github.com/HHS-IntroProgramming/Cryptog
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 command=input("Enter e to encrypt, d to decrypt, or q to quit: ")
-message=input("message: ")
-key=input("key: ")
+message=input("Message: ")
+key=input("Key: ")
 listmessage=list(message)
 list5=list(key)
 listmessagenums=[]
@@ -53,7 +53,10 @@ if command=="e":
     for b in newlist2:
         codelist.append(associations[b])
         print(codelist)
-        
+if command=="d":
+    for i in message:
+        listmessagenums.append(associations[i])
+        print(listmessagenums)
     
     
         
