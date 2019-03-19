@@ -83,7 +83,7 @@ if command=="d":
     print(decodelistfinal)
 if command == "q":
     print("Goodybe!")
-else:
+if command != "d" and command != "e" and command != "q":
     print("Did not understand command, try again.")
 
     
