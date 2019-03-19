@@ -19,6 +19,7 @@ listmessagenums=[]
 listkeynums=[]
 list6=[]
 listassociations=list(associations)
+print(listassociations)
 if command=="e":
     for i in message:
         listmessagenums.append(associations.find(i))
@@ -34,13 +35,6 @@ if command=="e":
     for f in range (0, len(listmessagenums)):
         key2.append(listkeynums[f%len(listkeynums)])
         print(key2)
-    #for q in range (0,d):
-        #key2.append(listkeynums)
-        #print(key2)
-    #for j in range (0,u):
-        #key2.append(listkeynums)
-        #print(key2)
-    #print(listkeynums)
     newlist=[x + y for x, y in zip(listmessagenums, key2)]
     print(newlist)
     newlist2=[]
@@ -53,10 +47,39 @@ if command=="e":
     for b in newlist2:
         codelist.append(associations[b])
         print(codelist)
+    print(codelist)
+listcode2=list(message)
 if command=="d":
-    for i in message:
-        listmessagenums.append(associations[i])
+    for i in listcode2:
+        listmessagenums.append(associations.find(i))
         print(listmessagenums)
+    for g in key:
+        listkeynums.append(associations.find(g))
+    print(listkeynums)
+    d=(len(listmessagenums))//(len(listkeynums))
+    print(d)
+    u=(len(listmessagenums))%(len(listkeynums))
+    print(u)
+    key2=[]
+    for f in range (0, len(listmessagenums)):
+        key2.append(listkeynums[f%len(listkeynums)])
+        print(key2)
+    newlist=[x - y for x, y in zip(listmessagenums, key2)]
+    print(newlist)
+    newlist2=[]
+    for x in newlist:
+        if x > len(listassociations):
+            newlist2.append(x-len(listassociations))
+        else:
+            newlist2.append(x)
+    decodelist=[]
+    for b in newlist2:
+        decodelist.append(associations[b])
+        print(decodelist)
+    print(decodelist)
+
+    
+        
     
     
         
