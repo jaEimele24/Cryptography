@@ -47,7 +47,7 @@ if command == "d" or command == "e":
             codelist.append(associations[b])
         codelistfinal="".join(codelist)
         print(codelistfinal)
-        istcode2=list(message)
+    listcode2=list(message)
     if command=="d":
         for i in listcode2:
             listmessagenums.append(associations.find(i))
