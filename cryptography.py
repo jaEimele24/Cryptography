@@ -78,9 +78,13 @@ if command=="d":
     for b in newlist2:
         decodelist.append(associations[b])
        # print(decodelist)
-    print(decodelist)
+    #print(decodelist)
     decodelistfinal="".join(decodelist)
     print(decodelistfinal)
+if command == "q":
+    print("Goodybe!")
+else:
+    print("Did not understand command, try again.")
 
     
         
