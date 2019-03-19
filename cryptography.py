@@ -1,7 +1,7 @@
 """
 cryptography.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: James Eiler
+Credit: Teachers
 
 Assignment:
 
@@ -19,24 +19,24 @@ listmessagenums=[]
 listkeynums=[]
 list6=[]
 listassociations=list(associations)
-print(listassociations)
+#print(listassociations)
 if command=="e":
     for i in message:
         listmessagenums.append(associations.find(i))
-    print(listmessagenums)
+    #print(listmessagenums)
     for x in key:
         listkeynums.append(associations.find(x))
-    print(listkeynums)
+    #print(listkeynums)
     d=(len(listmessagenums))//(len(listkeynums))
-    print(d)
+    #print(d)
     u=(len(listmessagenums))%(len(listkeynums))
-    print(u)
+    #print(u)
     key2=[]
     for f in range (0, len(listmessagenums)):
         key2.append(listkeynums[f%len(listkeynums)])
-        print(key2)
+        #print(key2)
     newlist=[x + y for x, y in zip(listmessagenums, key2)]
-    print(newlist)
+    #print(newlist)
     newlist2=[]
     for x in newlist:
         if x > len(listassociations):
@@ -46,26 +46,28 @@ if command=="e":
     codelist=[]
     for b in newlist2:
         codelist.append(associations[b])
-        print(codelist)
-    print(codelist)
+        #print(codelist)
+    #print(codelist)
+    codelistfinal="".join(codelist)
+    print(codelistfinal)
 listcode2=list(message)
 if command=="d":
     for i in listcode2:
         listmessagenums.append(associations.find(i))
-        print(listmessagenums)
+        #print(listmessagenums)
     for g in key:
         listkeynums.append(associations.find(g))
-    print(listkeynums)
+    #print(listkeynums)
     d=(len(listmessagenums))//(len(listkeynums))
-    print(d)
+    #print(d)
     u=(len(listmessagenums))%(len(listkeynums))
-    print(u)
+    #print(u)
     key2=[]
     for f in range (0, len(listmessagenums)):
         key2.append(listkeynums[f%len(listkeynums)])
-        print(key2)
+        #print(key2)
     newlist=[x - y for x, y in zip(listmessagenums, key2)]
-    print(newlist)
+    #print(newlist)
     newlist2=[]
     for x in newlist:
         if x > len(listassociations):
@@ -75,8 +77,10 @@ if command=="d":
     decodelist=[]
     for b in newlist2:
         decodelist.append(associations[b])
-        print(decodelist)
+       # print(decodelist)
     print(decodelist)
+    decodelistfinal="".join(decodelist)
+    print(decodelistfinal)
 
     
         
