@@ -16,7 +16,7 @@ while k!=1:
     if k!=1:
         command=input("Enter e to encrypt, d to decrypt, or q to quit: ")
         if command == "q":
-            print("Goodybe!")
+            print("Goodbye!")
             k=1
         if command != "d" and command != "e" and command != "q" and k!=1:
             print("Did not understand command, try again.")
